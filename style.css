@@ -986,12 +986,82 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    /* Header Mobilde */
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        position: relative;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+        background-color: var(--input-bg);
+    }
+
+    /* Ana Yapı Mobilde */
+    .main-content-wrapper {
+        flex-direction: column;
+    }
+
     #sidebar {
-        display: none;
-        /* Mobilde şimdilik gizle */
+        display: block;
+        /* Mobilde artık görünür */
+        position: static;
+        /* Sabit değil, akışta */
+        width: 100%;
+        border-right: none;
+        border-top: 1px solid var(--border-color);
+        order: 2;
+        /* İçeriğin altında görünsün */
+        height: auto;
+        overflow-y: visible;
+        padding-bottom: 80px;
+        /* Footer payı */
     }
 
     .main-content {
         margin-left: 0;
+        padding: 1rem;
+        padding-top: 20px;
+        order: 1;
+        /* İçerik üstte */
+    }
+
+    /* Sidebar Widgetları Mobilde */
+    .sidebar-widget {
+        margin-bottom: 15px;
+    }
+
+    .sounds-grid {
+        grid-template-columns: repeat(6, 1fr);
+        /* Ses butonları yatay tek sıra */
+    }
+
+    /* Yazılar ve Kartlar */
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .goal-card {
+        padding: 15px;
+    }
+
+    .chart-card {
+        padding: 15px;
+    }
+
+    /* Pomodoro Mobilde Daha Kompakt */
+    .pomodoro-widget .timer-display {
+        font-size: 2rem;
     }
 }
