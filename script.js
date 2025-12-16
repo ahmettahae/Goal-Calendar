@@ -8,26 +8,7 @@ const quotes = [
     "Dün bitti, anın tadını çıkar.",
     "Disiplin, özgürlüktür.",
     "Asla pes etme, mucizeler her gün olur.",
-    "Büyük başarılar, küçük adımlarla başlar.",
-    "Motivasyon seni başlatır, alışkanlık devam ettirir.",
-    "Ertelemek, zamanın hırsızıdır.",
-    "Hayallerin, bahanelerinden büyük olsun.",
-    "Yedi kez düş, sekiz kez kalk.",
-    "Bugün yapmadıkların, yarın pişmanlığın olur.",
-    "Değişim, konfor alanının sonunda başlar.",
-    "Zirveye giden yol, yokuş yukarıdır.",
-    "Yarın değil, şimdi.",
-    "Engeller, hedefe giden basamaklardır.",
-    "Sabır, acıdır ama meyvesi tatlıdır.",
-    "Başarı, pes etmeyenlerin ödülüdür.",
-    "Korkularının üzerine git, orada özgürlük var.",
-    "Zaman beklemez, sen de bekleme.",
-    "Yaptığın her şey, geleceğine bir yatırımdır.",
-    "Vazgeçtiğin an, kaybettiğin andır.",
-    "Karanlığa küfredeceğine bir mum yak.",
-    "En iyi manzara, en zor tırmanışın sonundadır.",
-    "Bugün ektiğini, yarın biçeceksin.",
-    "Kendine inan, gerisi gelir."
+    "Büyük başarılar, küçük adımlarla başlar."
 ];
 
 // --- DİL VERİTABANI ---
@@ -875,6 +856,7 @@ function toggleSound(type) {
 
 document.getElementById('profile-form').addEventListener('submit', function (e) {
     e.preventDefault();
+    currentUser.name = document.getElementById('p-name').value;
     currentUser.surname = document.getElementById('p-surname').value;
     currentUser.phone = document.getElementById('p-phone').value;
     currentUser.age = document.getElementById('p-age').value;
@@ -884,8 +866,21 @@ document.getElementById('profile-form').addEventListener('submit', function (e) 
     saveUser();
     alert("Profil güncellendi!");
     renderProfile();
-    closeModal('profile-modal');
+    toggleProfileEdit(false);
 });
+
+function toggleProfileEdit(showEdit) {
+    const viewCard = document.getElementById('profile-view-card');
+    const editCard = document.getElementById('profile-edit-card');
+
+    if (showEdit) {
+        viewCard.classList.add('hidden');
+        editCard.classList.remove('hidden');
+    } else {
+        viewCard.classList.remove('hidden');
+        editCard.classList.add('hidden');
+    }
+}
 
 function saveUser() {
     localStorage.setItem('user_' + currentUser.username, JSON.stringify(currentUser));
