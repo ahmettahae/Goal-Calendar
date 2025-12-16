@@ -51,7 +51,7 @@ const translations = {
         next_rank: "Sonraki rütbeye:", xp_left: "XP kaldı", completed: "Tamamlanan", ongoing: "Devam Eden",
         chart_info_total: "Toplam", chart_info_completed: "tamamlandı", chart_info_rate: "Başarı Oranı", chart_info_focus: "En çok odaklandığın alan", chart_info_none: "Henüz veri yok.",
         // HAKKINDA (TR)
-        about_title: "Kodların Ardındaki Hikâye",
+        about_title: "Kodların Ardındaki Hikaye",
         about_intro: "Merhaba, ben <strong>Ahmet Taha Erol</strong>.<br><br>Ankara Üniversitesi <strong>Bilgisayar Mühendisliği 3. sınıf öğrencisiyim</strong>. Hayatın yalnızca sınavlardan, ödevlerden ve not ortalamalarından ibaret olmadığına inananlardanım. Benim için asıl değerli olan; sabırla ilerlemek, istikrarlı büyümek ve her gün dünden biraz daha ileri gidebilmektir.<br><br>Bu platform, yalnızca bir web sitesi ya da sıradan bir proje değildir. Bu site; disiplinin, kararlılığın ve geleceği adım adım inşa etme arzusunun dijital bir yansımasıdır.",
         about_why_title: "Neden Bu Yola Çıktım?",
         about_why_text: "Zamanla şunu fark ettim: <strong>Gerçek başarı, büyük sıçramalarla değil; her gün atılan küçük ama kararlı adımlarla inşa ediliyor.</strong><br>Ancak insan zihni unutkandır. Harcanan emeği, uykusuz geceleri, vazgeçilmeyen hayalleri zamanla silikleştirir. İşte <strong>Goal Calendar</strong> tam olarak bu noktada doğdu: <em>Kendi gelişimimize şahitlik edebilmek için.</em>",
@@ -1140,4 +1140,5 @@ function openAddPhotoModal() {
 
     openModal('photo-modal');
 }
+
 
