@@ -8,7 +8,26 @@ const quotes = [
     "Dün bitti, anın tadını çıkar.",
     "Disiplin, özgürlüktür.",
     "Asla pes etme, mucizeler her gün olur.",
-    "Büyük başarılar, küçük adımlarla başlar."
+    "Büyük başarılar, küçük adımlarla başlar.",
+    "Motivasyon seni başlatır, alışkanlık devam ettirir.",
+    "Ertelemek, zamanın hırsızıdır.",
+    "Hayallerin, bahanelerinden büyük olsun.",
+    "Yedi kez düş, sekiz kez kalk.",
+    "Bugün yapmadıkların, yarın pişmanlığın olur.",
+    "Değişim, konfor alanının sonunda başlar.",
+    "Zirveye giden yol, yokuş yukarıdır.",
+    "Yarın değil, şimdi.",
+    "Engeller, hedefe giden basamaklardır.",
+    "Sabır, acıdır ama meyvesi tatlıdır.",
+    "Başarı, pes etmeyenlerin ödülüdür.",
+    "Korkularının üzerine git, orada özgürlük var.",
+    "Zaman beklemez, sen de bekleme.",
+    "Yaptığın her şey, geleceğine bir yatırımdır.",
+    "Vazgeçtiğin an, kaybettiğin andır.",
+    "Karanlığa küfredeceğine bir mum yak.",
+    "En iyi manzara, en zor tırmanışın sonundadır.",
+    "Bugün ektiğini, yarın biçeceksin.",
+    "Kendine inan, gerisi gelir."
 ];
 
 // --- DİL VERİTABANI ---
@@ -1121,3 +1140,4 @@ function openAddPhotoModal() {
 
     openModal('photo-modal');
 }
+
